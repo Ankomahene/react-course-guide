@@ -16,6 +16,7 @@ The report shows that the interest of people in **React** moved from **64 - 71**
 This was the Rank `React -> Vuejs -> Angular -> Preact -> Ember -> Svelte`
 
 Read more from [Log Rocket](https://blog.logrocket.com/state-of-javascript-what-are-the-most-in-demand-frontend-frameworks-in-2020/)
+
 For a more complete outlook on the state of JavaScript in 2020,[Read full report.](https://2019.stateofjs.com/)
 ###### NB: _Of the roughly 21,000 respondents, only 1,155 — about 6 percent — were female. Unfortunately, this may be reflective of the JavaScript developer ecosystem overall, and it needs to change._
 
