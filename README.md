@@ -18,7 +18,9 @@ For a more complete outlook on the state of JavaScript in 2020,[Read full report
 ###### NB: _Of the roughly 21,000 respondents, only 1,155 — about 6 percent — were female. Unfortunately, this may be reflective of the JavaScript developer ecosystem overall, and it needs to change._
 
 **Online Coding tool** - https://codesandbox.io/s/new
+
 **Practice at home** - https://reactjs.org/tutorial/tutorial.html
+
 **Further Reading** - https://reactjs.org/docs/hello-world.html (Main Concepts)
 
 ##### What Should You Know Before Learning React?
@@ -34,6 +36,7 @@ NB: Don't Worry, if you don't know any of these, we will explain concepts along 
 #### BASIC SETUP
 **Using CDN**s
 You will need React and ReactDOM
+
 Both React and ReactDOM are available over a CDN.
 ```js
 <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
@@ -53,12 +56,19 @@ ReactDOM.render(h1, root);
  ```
  
  >>>  Rendering
+ 
  >>> Understanding Components
+ 
  >>> Dynamic and Re-Usable Components
+ 
  >>> Props - Basic usage
+ 
   >>> Javascript ES6 Aside: **const** and **let**, **arrow functions**
+  
   >>> Aside: Javascript Classes
+  
   >>> Props - revisit
+  
  >>> States
 
 ##### States vrs Props
@@ -79,6 +89,7 @@ Differences
 > State can be Changed by Component itself 
 
 **Default props Value**
+
 `(Component.defaultProps = {key:value})`
 
 PROJECT: Stop-Watch Application
@@ -96,8 +107,11 @@ NB:  If you've previously installed `create-react-app` globally via `npm install
 
 
 **One Component per file**
+
 **Import and Exports**
+
 **Life cycle Components**
+
 **Event Listeners**
 
 PROJECT: Todo Application
@@ -105,7 +119,9 @@ PROJECT: Todo Application
 ##### ADVANCE REACT
 ___
 **React with Redux**
+
 **React Hooks**
+
 **Using APIs**
 
 PROJECT: API Based Application
