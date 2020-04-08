@@ -62,17 +62,21 @@ ReactDOM.render(h1, root);
  >>> States
 
 ##### States vrs Props
- ++Similarities++
+ Similarities
 > Both are object
+
 > Both can be used when rendering
+
 > Changes to both cause re-render
 
 Differences
->Props come from above
-State is defined in component itself
+> Props come from above
 
+> State is defined in component itself
+---
 >Props Can’t be changed by component itself
-State can be Changed by Component itself 
+
+> State can be Changed by Component itself 
 
 **Default props Value**
 `(Component.defaultProps = {key:value})`
