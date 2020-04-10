@@ -60,6 +60,13 @@ ReactDOM.render(h1, root);
  
  >>>  Rendering
  
+ Rendering is when you want to transform your React component into DOM for the browser to understand and display content
+ 
+ React Uses a **Virtual DOM** to render component and that makes it very fast and efficient
+ ```js
+ReactDOM.render(element, container[, callback])
+ ```
+ 
  >>> Understanding Components
  
  >>> Dynamic and Re-Usable Components
@@ -107,6 +114,13 @@ cd my-app
 npm start
 ```
 NB:  If you've previously installed `create-react-app` globally via `npm install -g create-react-app`, we recommend you uninstall the package using `npm uninstall -g create-react-app` to ensure that npx always uses the latest version.
+
+**React Routing**
+
+Mini Portfolio Project: USing **React Router DOM**
+
+we will use react-router-dom since we are building web-apps: 
+`npm install react-router-dom`
 
 
 **One Component per file**
