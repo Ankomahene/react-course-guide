@@ -79,7 +79,7 @@ ReactDOM.render(element, container[, callback])
   
   >>> Props - revisit
   
- >>> States
+ >>> State
 
 ##### States vrs Props
  Similarities
@@ -116,12 +116,27 @@ npm start
 NB:  If you've previously installed `create-react-app` globally via `npm install -g create-react-app`, we recommend you uninstall the package using `npm uninstall -g create-react-app` to ensure that npx always uses the latest version.
 
 **React Routing**
+Routing means Determining What should happen when a user visits a certain page of your site.
 
-Mini Portfolio Project: USing **React Router DOM**
+We will use **react-router-dom** since we are building web-apps: 
 
-we will use react-router-dom since we are building web-apps: 
+
 `npm install react-router-dom`
 
+These are the imports you will need, You can also visite the  [API Site](https://reacttraining.com/react-router/web/api/BrowserRouter) to learn more
+```js
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+```
++ Redirects
++ Request parameters
++ Query strings
+
+> Mini Portfolio Project: Using **React Router**
 
 **One Component per file**
 
