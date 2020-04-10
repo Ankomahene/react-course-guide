@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 
 <head>
@@ -5699,31 +5698,37 @@ ReactDOM.render(h1, document.getElementById('root'));
             </blockquote>
         </blockquote>
     </blockquote>
+    <p class="has-line-data" data-line-start="62" data-line-end="63">Rendering is when you want to transform your React
+        component into DOM for the browser to understand and display content</p>
+    <p class="has-line-data" data-line-start="64" data-line-end="65">React Uses a <strong>Virtual DOM</strong> to render
+        component and that makes it very fast and efficient</p>
+    <pre><code class="has-line-data" data-line-start="66" data-line-end="68">ReactDOM.render(element, container[, callback])
+</code></pre>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="62" data-line-end="63">Understanding Components</p>
+                <p class="has-line-data" data-line-start="69" data-line-end="70">Understanding Components</p>
             </blockquote>
         </blockquote>
     </blockquote>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="64" data-line-end="65">Dynamic and Re-Usable Components</p>
+                <p class="has-line-data" data-line-start="71" data-line-end="72">Dynamic and Re-Usable Components</p>
             </blockquote>
         </blockquote>
     </blockquote>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="66" data-line-end="67">Props - Basic usage</p>
+                <p class="has-line-data" data-line-start="73" data-line-end="74">Props - Basic usage</p>
             </blockquote>
         </blockquote>
     </blockquote>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="68" data-line-end="69">Javascript ES6 Aside:
+                <p class="has-line-data" data-line-start="75" data-line-end="76">Javascript ES6 Aside:
                     <strong>const</strong> and <strong>let</strong>, <strong>arrow functions</strong></p>
             </blockquote>
         </blockquote>
@@ -5731,81 +5736,111 @@ ReactDOM.render(h1, document.getElementById('root'));
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="70" data-line-end="71">Aside: Javascript Classes</p>
+                <p class="has-line-data" data-line-start="77" data-line-end="78">Aside: Javascript Classes</p>
             </blockquote>
         </blockquote>
     </blockquote>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="72" data-line-end="73">Props - revisit</p>
+                <p class="has-line-data" data-line-start="79" data-line-end="80">Props - revisit</p>
             </blockquote>
         </blockquote>
     </blockquote>
     <blockquote>
         <blockquote>
             <blockquote>
-                <p class="has-line-data" data-line-start="74" data-line-end="75">States</p>
+                <p class="has-line-data" data-line-start="81" data-line-end="82">State</p>
             </blockquote>
         </blockquote>
     </blockquote>
-    <h5 class="code-line" data-line-start="76" data-line-end="77"><a id="States_vrs_Props_76"></a>States vrs Props</h5>
-    <p class="has-line-data" data-line-start="77" data-line-end="78">Similarities</p>
+    <h5 class="code-line" data-line-start="83" data-line-end="84"><a id="States_vrs_Props_83"></a>States vrs Props</h5>
+    <p class="has-line-data" data-line-start="84" data-line-end="85">Similarities</p>
     <blockquote>
-        <p class="has-line-data" data-line-start="78" data-line-end="79">Both are object</p>
+        <p class="has-line-data" data-line-start="85" data-line-end="86">Both are object</p>
     </blockquote>
     <blockquote>
-        <p class="has-line-data" data-line-start="80" data-line-end="81">Both can be used when rendering</p>
+        <p class="has-line-data" data-line-start="87" data-line-end="88">Both can be used when rendering</p>
     </blockquote>
     <blockquote>
-        <p class="has-line-data" data-line-start="82" data-line-end="83">Changes to both cause re-render</p>
+        <p class="has-line-data" data-line-start="89" data-line-end="90">Changes to both cause re-render</p>
     </blockquote>
-    <p class="has-line-data" data-line-start="84" data-line-end="85">Differences</p>
+    <p class="has-line-data" data-line-start="91" data-line-end="92">Differences</p>
     <blockquote>
-        <p class="has-line-data" data-line-start="85" data-line-end="86">Props come from above</p>
+        <p class="has-line-data" data-line-start="92" data-line-end="93">Props come from above</p>
     </blockquote>
     <blockquote>
-        <p class="has-line-data" data-line-start="87" data-line-end="88">State is defined in component itself</p>
+        <p class="has-line-data" data-line-start="94" data-line-end="95">State is defined in component itself</p>
     </blockquote>
     <hr>
     <blockquote>
-        <p class="has-line-data" data-line-start="89" data-line-end="90">Props Can’t be changed by component itself</p>
+        <p class="has-line-data" data-line-start="96" data-line-end="97">Props Can’t be changed by component itself</p>
     </blockquote>
     <blockquote>
-        <p class="has-line-data" data-line-start="91" data-line-end="92">State can be Changed by Component itself</p>
+        <p class="has-line-data" data-line-start="98" data-line-end="99">State can be Changed by Component itself</p>
     </blockquote>
-    <p class="has-line-data" data-line-start="93" data-line-end="94"><strong>Default props Value</strong></p>
-    <p class="has-line-data" data-line-start="95" data-line-end="96"><code>(Component.defaultProps = {key:value})</code>
-    </p>
-    <p class="has-line-data" data-line-start="97" data-line-end="98">PROJECT: Stop-Watch Application(Preview Below)</p>
-    <img src="./stop-watch-app.png" width="300px" style="border-radius: 10px;" alt="stop-watch-app preview">
-    <h5 class="code-line" data-line-start="99" data-line-end="100"><a id="INTERMEDIATE_REACT_99"></a>INTERMEDIATE REACT
-    </h5>
+    <p class="has-line-data" data-line-start="100" data-line-end="101"><strong>Default props Value</strong></p>
+    <p class="has-line-data" data-line-start="102" data-line-end="103"><code>(Component.defaultProps =
+            {key:value})</code></p>
+    <p class="has-line-data" data-line-start="104" data-line-end="105">PROJECT: Stop-Watch Application</p>
+    <p>Click to see preview</p>
+    <a href="https://ankomahene.github.io/react-course-guide/stop-watch-app.png">
+        <img src="./stop-watch-app.png" width="300px" style="border-radius: 10px;" alt="stop-watch-app preview">
+    </a>
+
+    <h5 class="code-line" data-line-start="106" data-line-end="107"><a id="INTERMEDIATE_REACT_106"></a>INTERMEDIATE
+        REACT</h5>
     <hr>
-    <p class="has-line-data" data-line-start="101" data-line-end="103"><strong>Using creat-react-app</strong><br>
+    <p class="has-line-data" data-line-start="108" data-line-end="110"><strong>Using creat-react-app</strong><br>
         Create React App is an officially supported way to create single-page React applications. It offers a modern
         build setup with NO CONFIGURATION.<a href="https://create-react-app.dev/docs/getting-started/">Official Site</a>
     </p>
-    <pre><code class="has-line-data" data-line-start="104" data-line-end="108">npx create-react-app my-app
-        cd my-app
-        npm start
-    </code></pre>
-    <p class="has-line-data" data-line-start="108" data-line-end="109">NB: If you’ve previously installed
+    <pre><code class="has-line-data" data-line-start="111" data-line-end="115">npx create-react-app my-app
+cd my-app
+npm start
+</code></pre>
+    <p class="has-line-data" data-line-start="115" data-line-end="116">NB: If you’ve previously installed
         <code>create-react-app</code> globally via <code>npm install -g create-react-app</code>, we recommend you
         uninstall the package using <code>npm uninstall -g create-react-app</code> to ensure that npx always uses the
         latest version.</p>
-    <p class="has-line-data" data-line-start="111" data-line-end="112"><strong>One Component per file</strong></p>
-    <p class="has-line-data" data-line-start="113" data-line-end="114"><strong>Import and Exports</strong></p>
-    <p class="has-line-data" data-line-start="115" data-line-end="116"><strong>Life cycle Components</strong></p>
-    <p class="has-line-data" data-line-start="117" data-line-end="118"><strong>Event Listeners</strong></p>
-    <p class="has-line-data" data-line-start="119" data-line-end="120">PROJECT: Todo Application(Preview Below)</p>
-    <img src="./todo-app.png" width="300px" style="border-radius: 10px;" alt="todo-app preview">
-    <h5 class="code-line" data-line-start="121" data-line-end="122"><a id="ADVANCE_REACT_121"></a>ADVANCE REACT</h5>
+    <p class="has-line-data" data-line-start="117" data-line-end="119"><strong>React Routing</strong><br>
+        Routing means Determining What should happen when a user visits a certain page of your site.</p>
+    <p class="has-line-data" data-line-start="120" data-line-end="121">We will use <strong>react-router-dom</strong>
+        since we are building web-apps:</p>
+    <p class="has-line-data" data-line-start="123" data-line-end="124"><code>npm install react-router-dom</code></p>
+    <p class="has-line-data" data-line-start="125" data-line-end="126">These are the imports you will need, You can also
+        visite the <a href="https://reacttraining.com/react-router/web/api/BrowserRouter">API Site</a> to learn more</p>
+    <pre><code class="has-line-data" data-line-start="127" data-line-end="134"><span class="hljs-keyword">import</span> {
+  BrowserRouter <span class="hljs-keyword">as</span> Router,
+  Switch,
+  Route,
+  Link
+} <span class="hljs-keyword">from</span> <span class="hljs-string">"react-router-dom"</span>;
+</code></pre>
+    <ul>
+        <li class="has-line-data" data-line-start="134" data-line-end="135">Redirects</li>
+        <li class="has-line-data" data-line-start="135" data-line-end="136">Request parameters</li>
+        <li class="has-line-data" data-line-start="136" data-line-end="138">Query strings</li>
+    </ul>
+    <blockquote>
+        <p class="has-line-data" data-line-start="138" data-line-end="139">Mini Portfolio Project: Using <strong>React
+                Router</strong></p>
+    </blockquote>
+    <p class="has-line-data" data-line-start="140" data-line-end="141"><strong>One Component per file</strong></p>
+    <p class="has-line-data" data-line-start="142" data-line-end="143"><strong>Import and Exports</strong></p>
+    <p class="has-line-data" data-line-start="144" data-line-end="145"><strong>Life cycle Components</strong></p>
+    <p class="has-line-data" data-line-start="146" data-line-end="147"><strong>Event Listeners</strong></p>
+    <p class="has-line-data" data-line-start="148" data-line-end="149">PROJECT: Todo Application</p>
+    <p>Click to see preview</p>
+    <a href="https://ankomahene.github.io/react-course-guide/todo-app.png">
+        <img src="./todo-app.png" width="300px" style="border-radius: 10px;" alt="stop-watch-app preview">
+    </a>
+    <h5 class="code-line" data-line-start="150" data-line-end="151"><a id="ADVANCE_REACT_150"></a>ADVANCE REACT</h5>
     <hr>
-    <p class="has-line-data" data-line-start="123" data-line-end="124"><strong>React with Redux</strong></p>
-    <p class="has-line-data" data-line-start="125" data-line-end="126"><strong>React Hooks</strong></p>
-    <p class="has-line-data" data-line-start="127" data-line-end="128"><strong>Using APIs</strong></p>
-    <p class="has-line-data" data-line-start="129" data-line-end="130">PROJECT: API Based Application</p>
+    <p class="has-line-data" data-line-start="152" data-line-end="153"><strong>React with Redux</strong></p>
+    <p class="has-line-data" data-line-start="154" data-line-end="155"><strong>React Hooks</strong></p>
+    <p class="has-line-data" data-line-start="156" data-line-end="157"><strong>Using APIs</strong></p>
+    <p class="has-line-data" data-line-start="158" data-line-end="159">PROJECT: API Based Application</p>
 </body>
 
 </html>
