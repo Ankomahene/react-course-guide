@@ -69,9 +69,49 @@ ReactDOM.render(element, container[, callback])
  
  >>> Understanding Components
  
+ Components are the building blocks of any React app and a typical React app will have many components. They describe how a section of the **UI (User Interface)** should appear.
+ 
+ ```js
+ const HelloWorld = () => <h1>Hello World today!</h1>;
+ ```
+ Notice that the **HelloWorld** component starts with an uppercase, That's the React Standard way of naming components
+ 
+ To types of Component in React
+  - Class based Compoent
+```js
+class HelloWorld extends React.Component {
+  render(){
+    return <h1>Hello World Today!</h1>;
+  }
+}
+```
+These components are created using ES6’s class syntax
+They are sometimes referred to as smart, container or stateful components
+Read more about Components [here](https://medium.com/the-andela-way/understanding-react-components-37f841c1f3b)
+  - (Stateless*) Functional components
+```js
+const HelloWorld = () => <h1>Hello World today!</h1>;
+```
+  
+There is * on the "Stateless" becuase since introduction of **React-Hooks** (Which will be covered later in the course), they are no more called **Stateless Functional Components** but Just **Functional Component**. We will know WHY later.
+Functional Components are sometimes referred to as **-Presentational component**
+
+##### How do I choose which component type to use?
+**Use a class component if you:**
++ need to manage local state
++ need to add lifecycle methods to your component
++ need to add logic for event handlers
+
+**Otherwise, always use a functional component.**
+
+
  >>> Dynamic and Re-Usable Components
  
+ Read more about Components[here](https://medium.com/the-andela-way/understanding-react-components-37f841c1f3b)
+ 
  >>> Props - Basic usage
+ 
+ Props are React’s way of making components easily and dynamically customisable. They provide a way of passing properties/data down from one component to another, typically from a parent to a child component
  
   >>> Javascript ES6 Aside: **const** and **let**, **arrow functions**
   
@@ -80,6 +120,8 @@ ReactDOM.render(element, container[, callback])
   >>> Props - revisit
   
  >>> State
+ 
+ State is like a data store to the ReactJS component. It is mostly used to update the component when the user performs some action like clicking a button.
 
 ##### States vrs Props
  Similarities
@@ -146,13 +188,82 @@ import {
 
 **Event Listeners**
 
+One thing you will always need to do is to listen to events happening on the application and respond to them,events like **clicks, changes, submits, scroll,** etc. 
+
+In React we do that using **onEventName** where _'EventName'_ is the name of the event, e.g. `onClick, onChange, onSubmit, onMouseOver,` etc.
+
+**React Hooks**
+[Visit oficial Site](https://reactjs.org/docs/hooks-intro.html) for more on react hooks
+- useState
+
+The reason Why **Functional Components** are no more referred to as state the introduction of `useState` in **react-hooks** 
+Previously, the only place to use state was **Class Based Components** as Mentioned Earlier.
+So In case you create a functional component and realised along the way that you have to manege state in that component, you had to convert your functional component to Class Based Component.
+But with the introduction of `useState`, you can now manage state in your funcional components and that has really made our lives a bit more easier.
+
+```js
+const[state, setstate] = useState(initialstate);
+```
+#### Using the state hook
+```js
+import React, { useState } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+#### Equivalent Class Example
+```js
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+```
+Let's dive into code for more examples
+
+- useEffect
+
+The Effect Hook lets you perform side effects in function components
+Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects.
+```js
+useEffect(() => {
+    //take action here
+  });
+```
+you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+
+- useReducer
+
 PROJECT: Todo Application
 
 ##### ADVANCE REACT
 ___
 **React with Redux**
 
-**React Hooks**
+
 
 **Using APIs**
 
